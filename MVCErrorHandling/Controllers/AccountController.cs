@@ -97,7 +97,13 @@ namespace MVCErrorHandling.Controllers
             }
             catch(Exception ex)
             {
-                return View("Error", new HandleErrorInfo(ex, "UserInfo", "Login"));
+                //InsertError error = new InsertError();
+                //error.Message = "Both names are required.";
+                //error.MessageType = "Error";
+                //TempData["error"] = error;
+                ViewData["MessageType"] = "Error";
+                ViewData["MessageDetail"] = "Both names are required.";
+                return View();
             }
         }
 
