@@ -4,8 +4,8 @@
 
 if (ViewData["MessageType"].ToString() == "Error")
 {
-    <div class="alert alert-success" role="alert">
-        @ViewData["MessageDetail"]
+    <div class="alert alert-danger" role="alert">
+     <i class="glyphicon glyphicon-remove-circle"> </i> &nbsp;   @ViewData["MessageDetail"]
     </div>
     //@TempData["error"]
 }
