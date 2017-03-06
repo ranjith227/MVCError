@@ -4,7 +4,7 @@
 
 if (ViewData["MessageType"].ToString() == "Error")
 {
-    <div class="alert alert-danger" role="alert">
+    <div class="alert alert-danger" role="alert" onload="fadeMe()">
      <i class="glyphicon glyphicon-remove-circle"> </i> &nbsp;   @ViewData["MessageDetail"]
     </div>
     //@TempData["error"]
@@ -29,3 +29,12 @@ if (ViewData["MessageType"].ToString() == "info")
 }
 
 }
+
+
+<script>
+function fadeMe()
+{
+    $(this).hide(6000);
+}
+
+</script>
