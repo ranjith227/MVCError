@@ -1,0 +1,20 @@
+*{padding:0;margin:0}
+html{background:#334 url(tactile_noise.png)}
+
+a{color:#0a6;text-decoration:none;text-shadow:rgba(0,0,0,.5) -1px -1px 1px;}
+a:hover{color:#dc4}
+body > div{width:600px;margin:20px auto;position:relative}
+
+#menu{position:absolute;right:0;top:0px}
+#menu a{background:#111;background:rgba(0,0,0,.2);display:inline-block;padding:4px 16px}
+.example,
+#note > div{padding:20px 0;border-bottom:1px solid #111;border-top:1px solid #222}
+#note > div h2{font-size:16px;color:#cccc66}
+#note > div p{color:#884}
+.example h2{font-size:12px;text-transform:uppercase;color:#bbb;text-shadow:#000 -1px -1px 1px;}
+.example p{color:#666;color:rgba(255,255,255,.3);text-shadow:rgba(0,0,0,.5) -1px -1px 1px;}
+.example a{display:block;clear:both}
+.example .throb{margin:10px 0}
+#t3{float:left;margin-right:10px}
+
+
